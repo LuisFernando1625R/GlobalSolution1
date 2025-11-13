@@ -51,9 +51,6 @@ header {
     color: var(--cor-roxo);
 }
 
-
-
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -74,9 +71,10 @@ header {
 
 .home-section1-elementos {
     position: relative;
-    top:30%
+    top:30%;
+    font-weight:bold;
+    font-size: 25px;
 }
-
 #home-section1-button-principal{
     background: linear-gradient(90deg, var(--cor-roxo), var(--cor-azul), var(--cor-pessego));
     background-size: 200%;
