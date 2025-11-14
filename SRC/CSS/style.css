@@ -61,8 +61,8 @@ header {
     
 }
 
-.home-section1 {
-    background-image:url(/src/img/img-home-section1.jpg);
+#home-section1 {
+    background-image:url(/img/img-home-section1.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -93,3 +93,55 @@ header {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgb(121, 78, 253, 0.4);
 }
+
+/* Home - Section 2 - Problema-titulo*/
+#home-section2 {
+    background-image:url(/img/img-home-problema.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+}
+
+/* Home - Section 3 - Problema-descrição*/
+#home-section3 {
+    background-image:url(/img/img-home-problema2.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+}
+
+/* Home - Section 4 - Solução-titulo*/
+#home-section4 {
+    background-image:url(/img/img-home-solucao.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+}
+
+/* Home - Section 5 - Solução-descrição*/
+#home-section5 {
+    background-image:url(/img/img-home-solucao2.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+ /*fale conosco*/
+.fale-conosco-section1 {
+    background-image:url(/img/img-fale-conosco2.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+}
+
