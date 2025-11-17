@@ -1,0 +1,21 @@
+{
+  "name": "global-solution1",
+  "version": "1.0.0",
+  "description": "Assistente Virtual de Bem-Estar no Trabalho\r Nome: \"MindWork\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisFernando1625R/GlobalSolution1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisFernando1625R/GlobalSolution1/issues"
+  },
+  "homepage": "https://github.com/LuisFernando1625R/GlobalSolution1#readme"
+}
