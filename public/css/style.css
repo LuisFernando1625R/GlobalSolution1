@@ -142,3 +142,10 @@ header {
     justify-items: center;
 }
 
+.img-fale-conosco-formulario {
+    background-image: url(/img/img-fale-conosco-formulario.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
