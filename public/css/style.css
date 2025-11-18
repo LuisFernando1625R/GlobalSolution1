@@ -133,6 +133,11 @@ header {
 
 
 
+
+
+
+
+
  /*fale conosco*/
 .fale-conosco-section1 {
     background-image:url(/img/img-fale-conosco2.jpg);
@@ -149,3 +154,15 @@ header {
 }
 
 
+
+
+
+
+/* Recomendação - img de fundo*/
+#teste-section1 {
+    background-image:url(/img/img-recomendacao-fundo.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+}
