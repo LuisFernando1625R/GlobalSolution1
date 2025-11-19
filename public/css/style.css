@@ -153,3 +153,26 @@ header {
     text-align: center;
     justify-items: center;
 }
+.top{
+    padding-top: 300px;
+}
+.bg{
+           background-image:url(/img/img-home-section1.jpg);
+    background-size: cover;
+}
+.pergunta {
+  margin-bottom: 15px;
+}
+.pergunta label {
+  margin-right: 8px;
+}
+    .pergunta {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .opcoes label {
+      margin-right: 10px;
+      display: inline-block;
+    }
