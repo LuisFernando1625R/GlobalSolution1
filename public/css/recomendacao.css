@@ -119,6 +119,7 @@ p {
     font-size: 1.5rem;
     margin: 0;
     padding: 10px;
+    font-weight: 490;
 }
 
 .indicacoes, .recomendacoes {
@@ -215,6 +216,9 @@ dd p{
         flex-direction: column;
         justify-content: space-evenly;
         gap: 10px;
+    }
+    .titulo-principal{
+        padding-top: 10px;
     }
     .home-nav-links{
         flex-direction: column;
