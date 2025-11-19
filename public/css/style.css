@@ -138,7 +138,6 @@ header {
 }
 
 
-
  /*fale conosco*/
 .fale-conosco-section1 {
     background-image:url(/img/img-fale-conosco2.jpg);
@@ -155,13 +154,9 @@ header {
 }
 
 
-
-
-
-
 /* Teste - img de fundo*/
 #teste-section1 {
-    background-image:url(/img/img-recomendacao-fundo.jpg);
+    background-image:url(/img/img-teste-fundo.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -174,9 +169,6 @@ header {
     background-size: cover;
     border-radius: 20px;
 }
-
-
-
 
 
 .bg-mint-green {
@@ -198,9 +190,6 @@ header {
 .bg-coral {
     background-color: var(--cor-salmao-rosado-muito-triste);
 }
-
-
-
 
 .face-icon {
     width: 60px;
