@@ -162,6 +162,7 @@ header {
     text-align: center;
     justify-items: center;
 }
+<<<<<<< HEAD
 
 /* Teste - img do fundo do carrossel*/
 .teste-img-carrossel {
@@ -202,3 +203,28 @@ header {
 
 
 
+=======
+.top{
+    padding-top: 300px;
+}
+.bg{
+           background-image:url(/img/img-home-section1.jpg);
+    background-size: cover;
+}
+.pergunta {
+  margin-bottom: 15px;
+}
+.pergunta label {
+  margin-right: 8px;
+}
+    .pergunta {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .opcoes label {
+      margin-right: 10px;
+      display: inline-block;
+    }
+>>>>>>> 521a9fa2ebd9f57421e55ec4b4c3c8a6e9c499e7

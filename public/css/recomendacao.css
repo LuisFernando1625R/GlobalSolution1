@@ -1,72 +1,142 @@
-header{
-    display: none;
+:root {
+--cor-azul-claro: #EEF7FD;   /* Fundo muito claro */
+--cor-roxo: #794EFD;         /* Roxo vibrante */
+--cor-lavanda: #A88BFB;      /* Roxo mais suave */
+--cor-azul: #57BAFD;         /* Azul vivo */
+--cor-pessego: #FBD1CC;      /* Rosa/pêssego claro */
 }
 
-main{
-    margin: 20px;
+.container-header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 120px;
+padding: 0 50px;
+margin: 0 27px;
 }
 
-ul{
-    padding: 0;
+.home-nav-logoespan {
+display: flex;
+align-items: center;
+gap: 5px;
 }
 
-li{
-    list-style: none;
+.home-nav-logo {
+width: 30px;
 }
 
-section{
-    margin: 20px;
+#home-nav-span {
+font-size: 1.5rem;
+font-weight: bold;
+color: var(--cor-lavanda);
 }
 
-.card-indicacao, h3, .sub-subtitulo {
-  overflow-wrap: break-word;
-  word-break: break-word;
-  box-sizing: border-box;
+.home-nav, .home-nav nav,
+.home-nav-links {
+display: flex;
+align-items: center;
 }
 
-
-.titulo-principal, .subtitulo, .sub-subtitulo{
-    box-sizing: border-box;
-    text-align: center;
-    margin: 25px 0px;
+.home-nav-links {
+margin: 0;
+flex-direction: row;
+gap: 10px;
 }
 
-.indicacoes, .recomendacoes{
-    width: auto;
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px;
+.home-nav-links li {
+list-style: none;
+font-weight: bold;
+font-size: 1.5rem;
 }
 
-.card-indicacao{
-    width: 45%;
+.home-nav-links li a {
+text-decoration: none;
+color: var(--cor-azul);
 }
 
-.card-indicacao, .card-recomendacao-por-nivel{
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    border-radius: 24px;
-    box-shadow: 0px 0px 17px 4px #9C9C9C;
-    justify-content: center;
-    align-items: center;
+.home-nav-links li a:hover {
+color: var(--cor-roxo);
 }
 
-.card-recomendacao-por-nivel{
-    width: 30%;
+main {
+margin: 0 20px;
 }
 
-
-@media  screen and (max-width: 740px) {
-    .card-indicacao{
-        width: 95%;
-    }
+ul {
+padding: 0;
 }
 
-@media  screen and (min-width: 1300px) {
-    .card-indicacao{
-        width: 30%;
-    }
+li {
+list-style: none;
+}
+
+section {
+margin: 20px;
+}
+
+p {
+margin: 0;
+padding: 5px 25px;
+}
+
+.card-indicacao, .card-recomendacao-por-nivel, h3, .sub-subtitulo {
+overflow-wrap: break-word;
+word-break: break-word;
+box-sizing: border-box;
+}
+
+#card-separado {
+width: 87.5%;
+}
+
+.titulo-principal, .subtitulo, .sub-subtitulo {
+box-sizing: border-box;
+text-align: center;
+margin: 10px 0 0 0;
+}
+
+.subtitulo {
+padding-bottom: 25px;
+}
+
+.indicacoes, .recomendacoes {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 25px;
+box-sizing: border-box;
+margin: 0;
+}
+
+.recomendacoes {
+margin: 0 30px;
+}
+
+.card-indicacao {
+width: 40%;
+}
+
+.card-indicacao, .card-recomendacao-por-nivel {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px;
+border-radius: 24px;
+box-shadow: 0 0 17px 4px #9C9C9C;
+background-color: aliceblue;
+}
+
+.card-recomendacao-por-nivel {
+width: 30%;
+}
+
+@media screen and (max-width: 740px) {
+.card-indicacao, .card-recomendacao-por-nivel {
+width: 95%;
+padding: 10px;
+}
+p {
+text-align: justify;
+}
 }
