@@ -7,7 +7,8 @@
 }
 
 body{
-    justify-content: center;
+    background: #364fb3;
+    background: linear-gradient(90deg,rgba(54, 79, 179, 0.15) 0%, rgba(255, 255, 255, 1) 50%, rgba(243, 138, 255, 0.15) 100%);
 }
 
 .container-header{
@@ -16,8 +17,9 @@ body{
     justify-content: space-between;
     height: 100px;
     width: auto;
-    padding: 0 50px;
-    margin: 0 27px;
+    padding: 0 77px;
+    margin: 0; 
+    background-color: #fff;
 }
 
 .home-nav-logo {
@@ -107,7 +109,7 @@ p {
 
 .titulo-principal{
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 
 .subtitulo {
