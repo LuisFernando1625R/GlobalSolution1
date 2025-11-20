@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,156 +8,766 @@
     <script src="/public/js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Global Solution - MindWork</title>
 </head>
 
-<<<<<<< HEAD
+
 <body>
-=======
-<body class="bg">
->>>>>>> 521a9fa2ebd9f57421e55ec4b4c3c8a6e9c499e7
-    </head>
 
-    <body>
-        <header>
-            <div class="container">
-                <div class="home-nav-logoespan">
-                    <img src="/img/img-logo-mindwork-semfundo-semtitulo.png" alt="Logo da MindWork"
-                        class="home-nav-logo">
-                    <span id="home-nav-span">𝑀𝑖𝑛𝑑𝑊𝑜𝑟𝑘</span>
+    <body class="bg">
+
+        </head>
+
+        <body>
+            <header>
+                <div class="container">
+                    <div class="home-nav-logoespan">
+                        <img src="/img/img-logo-mindwork-semfundo-semtitulo.png" alt="Logo da MindWork"
+                            class="home-nav-logo">
+                        <span id="home-nav-span">𝑀𝑖𝑛𝑑𝑊𝑜𝑟𝑘</span>
+                    </div>
+
+                    <div>
+                        <nav>
+                            <ul class="home-nav-links">
+                                <li>
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/recomendacao.html">Recomendação</a>
+                                </li>
+                                <li>
+                                    <a href="/fale-conosco.html">Fale Conosco</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+            </header>
 
-                <div>
-                    <nav>
-                        <ul class="home-nav-links">
-                            <li>
-                                <a href="/index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="/recomendacao.html">Recomendação</a>
-                            </li>
-                            <li>
-                                <a href="/fale-conosco.html">Fale Conosco</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-<<<<<<< HEAD
 
-        <section>
-            <div id="teste-section1" class="d-flex align-items-center">
-                <div class="container d-block ">
-                    <div class="row ">
-                        <div class="col-8 offset-2 ">
-                            <div class="teste-img-carrossel py-3  ">
-                                <div id="burnoutAssessmentCarousel" class="carousel slide mindwork-card"
-                                    data-bs-ride="false" data-bs-interval="false">
-                                    <div class="carousel-inner">
-                                        <!-- Pergunta 1 -->
-                                        <div class="carousel-item active">
-                                            <div class="card-body p-4 p-md-5 text-center">
-                                                <p class="question-text mb-4">Com que frequência você se sente
-                                                    emocionalmente esgotado pelo trabalho?</p>
-                                                <div
-                                                    class="d-flex justify-content-around align-items-end mt-4 response-options">
-                                                    <div class="response-item" data-value="1">
-                                                        <div class="face-icon bg-mint-green">😊</div>
-                                                        <span class="response-label">Nunca</span>
-                                                    </div>
-                                                    <div class="response-item" data-value="2">
-                                                        <div class="face-icon bg-blue">🙂</div>
-                                                        <span class="response-label">Raramente</span>
-                                                    </div>
-                                                    <div class="response-item" data-value="3">
-                                                        <div class="face-icon bg-purple">😐</div>
-                                                        <span class="response-label">Às vezes</span>
-                                                    </div>
-                                                    <div class="response-item" data-value="4">
-                                                        <div class="face-icon bg-dark-purple">🙁</div>
-                                                        <span class="response-label">Frequentemente</span>
-                                                    </div>
-                                                    <div class="response-item" data-value="5">
-                                                        <div class="face-icon bg-coral">😞</div>
-                                                        <span class="response-label">Sempre</span>
-                                                    </div>
-                                                </div>
+            <section>
 
-                                                <p class="question-counter mt-4 mb-0">Pergunta 1 de 20</p>
-                                            </div>
+                <div id="teste-section1" class="d-flex align-items-center">
+                    <div class="container d-block ">
+                        <div id="meuCarrossel" class="carousel slide " data-bs-ride="false" data-bs-interval="false">
 
-                                            <!-- Pergunta 2 -->
-                                            <div class="carousel-item">
-                                                <div class="card-body p-4 p-md-5 text-center">
-                                                    <p class="question-text mb-4">Com que frequência você sente que não
-                                                        consegue se desconectar do trabalho?</p>
+                            <div class="row">
+                                <div class="col-8 offset-2 ">
 
-                                                    <!-- Barra de progresso da escala -->
-                                                    <div class="question-scale-progress mb-4">
-                                                        <div class="progress-line"></div>
-                                                        <div
-                                                            class="progress-dots d-flex justify-content-between position-relative">
-                                                            <span class="dot" data-value="1">1</span>
-                                                            <span class="dot" data-value="2">2</span>
-                                                            <span class="dot" data-value="3">3</span>
-                                                            <span class="dot" data-value="4">4</span>
-                                                            <span class="dot" data-value="5">5</span>
-                                                        </div>
-                                                    </div>
+                                    <div class=" py-3">
+                                        <!--início do Carrossel-->
+                                        <div class="carousel-inner ">
 
-                                                    <!-- Opções de resposta com expressões faciais -->
-                                                    <div
-                                                        class="d-flex justify-content-around align-items-end mt-4 response-options">
+                                            <!-- Pergunta 1 -->
+                                            <div class="carousel-item active" data-q="1">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">1. Precisa se preparar mentalmente
+                                                        antes de começar o dia?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
                                                         <div class="response-item" data-value="1">
                                                             <div class="face-icon bg-mint-green">😊</div>
-                                                            <span class="response-label">Nunca</span>
+                                                            <small>Nunca</small>
                                                         </div>
                                                         <div class="response-item" data-value="2">
                                                             <div class="face-icon bg-blue">🙂</div>
-                                                            <span class="response-label">Raramente</span>
+                                                            <small>Raramente</small>
                                                         </div>
                                                         <div class="response-item" data-value="3">
-                                                            <div class="face-icon bg-purple">😐</div>
-                                                            <span class="response-label">Às vezes</span>
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
                                                         </div>
                                                         <div class="response-item" data-value="4">
                                                             <div class="face-icon bg-dark-purple">🙁</div>
-                                                            <span class="response-label">Frequentemente</span>
+                                                            <small>Freq.</small>
                                                         </div>
                                                         <div class="response-item" data-value="5">
                                                             <div class="face-icon bg-coral">😞</div>
-                                                            <span class="response-label">Sempre</span>
+                                                            <small>Sempre</small>
                                                         </div>
                                                     </div>
 
-                                                    <p class="question-counter mt-4 mb-0">Pergunta 2 de 5</p>
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 1 de 20</p>
                                                 </div>
                                             </div>
 
+                                            <!-- Pergunta 2 -->
+                                            <div class="carousel-item" data-q="2">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">2. Pequenas tarefas exigem mais
+                                                        energia do que deveriam?</p>
 
-                                            <!-- Botões de navegação -->
-                                            <div class="d-flex justify-content-between mt-4 w-100 px-4">
-                                                <button class="btn btn-no-border" class="carousel-control-prev"
-                                                    type="button" data-bs-target="#carouselExampleIndicators"
-                                                    data-bs-slide="prev" id="prevQuestionBtn" disabled>Anterior</button>
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
 
-                                                <button class="btn mindwork-btn-primary"
-                                                    id="nextQuestionBtn">Próxima</button>
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 2 de 20</p>
+                                                </div>
                                             </div>
+
+                                            <!-- Pergunta 3 -->
+                                            <div class="carousel-item" data-q="3">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">3. Não consegue cumprir o que planeja
+                                                        mesmo se organizando bem?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 3 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 4 -->
+                                            <div class="carousel-item" data-q="4">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">4. Dificuldade de se desligar do
+                                                        trabalho fora do horário?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 4 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 5 -->
+                                            <div class="carousel-item" data-q="5">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">5. Suas decisões parecem não fazer
+                                                        diferença no resultado final?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 5 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 6 -->
+                                            <div class="carousel-item" data-q="6">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">6. Precisa refazer tarefas porque acha
+                                                        que não ficaram boas o suficiente?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 6 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 7 -->
+                                            <div class="carousel-item" data-q="7">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">7. Sente que seu esforço não é
+                                                        reconhecido?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 7 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 8 -->
+                                            <div class="carousel-item" data-q="8">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">8. Acaba fazendo tarefas que não eram
+                                                        sua responsabilidade?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 8 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 9 -->
+                                            <div class="carousel-item" data-q="9">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">9. Evita pedir ajuda mesmo quando
+                                                        precisa?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 9 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 10 -->
+                                            <div class="carousel-item" data-q="10">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">10. Evita conversar com colegas ou
+                                                        superiores sobre problemas?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 10 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 11 -->
+                                            <div class="carousel-item" data-q="11">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">11. Funciona no “automático”, sem
+                                                        pensar muito no que faz?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 11 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 12 -->
+                                            <div class="carousel-item" data-q="12">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">12. Sua mente fica acelerada mesmo sem
+                                                        pressão?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 12 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 13 -->
+                                            <div class="carousel-item" data-q="13">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">13. Não tem tempo suficiente para
+                                                        pausas ou descanso durante o dia?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 13 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 14 -->
+                                            <div class="carousel-item" data-q="14">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">14. Irrita-se com coisas pequenas que
+                                                        normalmente não incomodariam?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 14 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 15 -->
+                                            <div class="carousel-item" data-q="15">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">15. Perdeu o prazer em atividades que
+                                                        antes gostava?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 15 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 16 -->
+                                            <div class="carousel-item" data-q="16">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">16. Sente que está sempre atrasado ou
+                                                        correndo atrás das demandas?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 16 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 17 -->
+                                            <div class="carousel-item" data-q="17">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">17. Seu corpo reage ao estresse antes
+                                                        de você perceber?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 17 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 18 -->
+                                            <div class="carousel-item" data-q="18">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">18. Mesmo descansando, não recupera
+                                                        totalmente a energia?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 18 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 19 -->
+                                            <div class="carousel-item" data-q="19">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">19. Sente que precisa provar
+                                                        constantemente que é competente?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 19 de 20</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pergunta 20 -->
+                                            <div class="carousel-item" data-q="20">
+                                                <div class="card-body text-center">
+                                                    <p class="question-text mb-4">20. Sente que não tem controle sobre
+                                                        como seu dia acontece?</p>
+
+                                                    <div class="d-flex justify-content-between response-options mx-auto"
+                                                        style="max-width:520px;">
+                                                        <div class="response-item" data-value="1">
+                                                            <div class="face-icon bg-mint-green">😊</div>
+                                                            <small>Nunca</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="2">
+                                                            <div class="face-icon bg-blue">🙂</div>
+                                                            <small>Raramente</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="3">
+                                                            <div class="face-icon bg-purple">😐</div><small>Às
+                                                                vezes</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="4">
+                                                            <div class="face-icon bg-dark-purple">🙁</div>
+                                                            <small>Freq.</small>
+                                                        </div>
+                                                        <div class="response-item" data-value="5">
+                                                            <div class="face-icon bg-coral">😞</div>
+                                                            <small>Sempre</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="question-counter mt-4 mb-0">Pergunta 20 de 20</p>
+                                                </div>
+                                            </div>
+
                                         </div>
+                                        <!-- FIM DO CARROSSEL -->
+
+
+                                        <!-- Botões de navegação -->
+                                        <div class="d-flex justify-content-between mt-4 w-100 px-4">
+
+                                            <button class="fs-2 text-black carousel-control-prev"
+                                                type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev"
+                                                id="prevQuestionBtn">Anterior</button>
+
+                                            <button class="fs-2 text-black carousel-control-next"
+                                                type="button" data-bs-target="#meuCarrossel" data-bs-slide="next"
+                                                id="nextQuestionBtn">Próximo</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </body>
+            </section>
+        </body>
 
-=======
+
+
 
         <section class="top">
             <div class="container py-4 flex">
@@ -518,9 +1128,10 @@
                                 </div>
                             </div>
 
-        
+
                             <div class="text-center mt-4">
-                                <button class="btn btn-primary btn-lg" onclick="mostraValor()" type="submit">Enviar respostas</button>
+                                <button class="btn btn-primary btn-lg" onclick="mostraValor()" type="submit">Enviar
+                                    respostas</button>
                             </div>
 
                         </form>
@@ -534,26 +1145,24 @@
         </section>
 
         <script>
-
             function pegaValor(name) {
                 const selecionado = document.querySelector(`input[name="${name}"]:checked`)
                 return selecionado ? Number(selecionado.value) : 0;
             }
 
-            function mostraValor(){
+            function mostraValor() {
                 let total = 0
 
-                for (let i = 1; i <= 20; i++){
-                    total =+ pegaValor(`q${i}`)
+                for (let i = 1; i <= 20; i++) {
+                    total = +pegaValor(`q${i}`)
 
                 }
 
-                 alert("Sua pontuação total é: " + total);
+                alert("Sua pontuação total é: " + total);
             }
-
-
         </script>
     </body>
 
->>>>>>> 521a9fa2ebd9f57421e55ec4b4c3c8a6e9c499e7
+    >>>>>>> 521a9fa2ebd9f57421e55ec4b4c3c8a6e9c499e7
+
 </html>
