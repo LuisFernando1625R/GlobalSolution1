@@ -3,26 +3,32 @@
     margin: 0;
     border: 0;
 }
+
 :root {
-    --cor-azul-claro: #EEF7FD;   /* Fundo muito claro */
-    --cor-roxo: #794EFD;         /* Roxo vibrante */
-    --cor-lavanda: #A88BFB;      /* Roxo mais suave */
-    --cor-azul: #57BAFD;         /* Azul vivo */
-    --cor-pessego: #FBD1CC;      /* Rosa/pêssego claro */
+    --cor-azul-claro: #EEF7FD;
+    /* Fundo muito claro */
+    --cor-roxo: #794EFD;
+    /* Roxo vibrante */
+    --cor-lavanda: #A88BFB;
+    /* Roxo mais suave */
+    --cor-azul: #57BAFD;
+    /* Azul vivo */
+    --cor-pessego: #FBD1CC;
+    /* Rosa/pêssego claro */
 }
 
 header {
     width: 100%;
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: 0 2px 10px rgba(10px);
     z-index: 1000;
 }
 
 .home-nav-logoespan {
-    display:flex;
+    display: flex;
     align-items: center;
     gap: 10px;
 }
@@ -38,15 +44,17 @@ header {
     color: var(--cor-lavanda)
 }
 
-.home-nav-links a, ul{
+.home-nav-links a,
+ul {
     display: flex;
-    gap:10px;
+    gap: 10px;
     text-decoration: none;
     color: var(--cor-azul);
     list-style-type: none;
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 .home-nav-links a:hover {
     color: var(--cor-roxo);
 }
@@ -58,11 +66,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 40px;
-    
+
 }
 
 #home-section1 {
-    background-image:url(/img/img-home-section1.jpg);
+    background-image: url(/img/img-home-section1.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -71,11 +79,12 @@ header {
 
 .home-section1-elementos {
     position: relative;
-    top:30%;
-    font-weight:bold;
+    top: 30%;
+    font-weight: bold;
     font-size: 25px;
 }
-#home-section1-button-principal{
+
+#home-section1-button-principal {
     background: linear-gradient(90deg, var(--cor-roxo), var(--cor-azul), var(--cor-pessego));
     background-size: 200%;
     border: none;
@@ -85,10 +94,11 @@ header {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
-    color:black;
+    color: black;
     transition: all 0.4s ease;
     position: relative;
-} 
+}
+
 #home-section1-button-principal:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgb(121, 78, 253, 0.4);
@@ -96,7 +106,7 @@ header {
 
 /* Home - Section 2 - Problema-titulo*/
 #home-section2 {
-    background-image:url(/img/img-home-problema.jpg);
+    background-image: url(/img/img-home-problema.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -105,7 +115,7 @@ header {
 
 /* Home - Section 3 - Problema-descrição*/
 #home-section3 {
-    background-image:url(/img/img-home-problema2.jpg);
+    background-image: url(/img/img-home-problema2.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -114,7 +124,7 @@ header {
 
 /* Home - Section 4 - Solução-titulo*/
 #home-section4 {
-    background-image:url(/img/img-home-solucao.jpg);
+    background-image: url(/img/img-home-solucao.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -123,16 +133,16 @@ header {
 
 /* Home - Section 5 - Solução-descrição*/
 #home-section5 {
-    background-image:url(/img/img-home-solucao2.jpg);
+    background-image: url(/img/img-home-solucao2.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
     justify-items: center;
 }
 
- /*fale conosco*/
+/*fale conosco*/
 .fale-conosco-section1 {
-    background-image:url(/img/img-fale-conosco2.jpg);
+    background-image: url(/img/img-fale-conosco2.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -147,32 +157,49 @@ header {
 
 /* Recomendação - img de fundo*/
 #teste-section1 {
-    background-image:url(/img/img-recomendacao-fundo.jpg);
+    background-image: url(/img/img-recomendacao-fundo.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
     justify-items: center;
 }
-.top{
+
+.top {
     padding-top: 300px;
 }
-.bg{
-           background-image:url(/img/img-home-section1.jpg);
+
+.bg {
+    background-image: url(/img/img-home-section1.jpg);
     background-size: cover;
 }
-.pergunta {
-  margin-bottom: 15px;
-}
-.pergunta label {
-  margin-right: 8px;
-}
-    .pergunta {
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ddd;
-    }
 
-    .opcoes label {
-      margin-right: 10px;
-      display: inline-block;
-    }
+.pergunta {
+    margin-bottom: 15px;
+}
+
+.pergunta label {
+    margin-right: 8px;
+}
+
+.pergunta {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.opcoes label {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.corpo {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.topo {
+   align-self: flex-start;
+   margin-top: 40px;
+   padding: 10px;
+}

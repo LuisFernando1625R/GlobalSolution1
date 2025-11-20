@@ -43,377 +43,381 @@
         </header>
 
         <section class="top">
-            <div class="container py-4 flex">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="text-center mb-4">Questionário de Burnout</h3>
+            <div class="container py-4 ">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="">
+                            <h3 class="text-center">Questionário de Burnout</h3>
+                            <form id="burnoutForm" class="corpo">
+                                <div class="">
+                                    <label class="form-label">
+                                        1. Precisa se preparar mentalmente antes de começar o dia?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q1" id="q1_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q1_1">1</label>
+                                        <input type="radio" class="btn-check" name="q1" id="q1_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q1_2">2</label>
+                                        <input type="radio" class="btn-check" name="q1" id="q1_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q1_3">3</label>
+                                        <input type="radio" class="btn-check" name="q1" id="q1_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q1_4">4</label>
+                                        <input type="radio" class="btn-check" name="q1" id="q1_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q1_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        2. Pequenas tarefas exigem mais energia do que deveriam?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q2" id="q2_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q2_1">1</label>
+                                        <input type="radio" class="btn-check" name="q2" id="q2_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q2_2">2</label>
+                                        <input type="radio" class="btn-check" name="q2" id="q2_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q2_3">3</label>
+                                        <input type="radio" class="btn-check" name="q2" id="q2_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q2_4">4</label>
+                                        <input type="radio" class="btn-check" name="q2" id="q2_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q2_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        3. Não consegue cumprir o que planeja mesmo se organizando bem?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q3" id="q3_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q3_1">1</label>
+                                        <input type="radio" class="btn-check" name="q3" id="q3_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q3_2">2</label>
+                                        <input type="radio" class="btn-check" name="q3" id="q3_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q3_3">3</label>
+                                        <input type="radio" class="btn-check" name="q3" id="q3_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q3_4">4</label>
+                                        <input type="radio" class="btn-check" name="q3" id="q3_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q3_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        4. Dificuldade de se desligar do trabalho fora do horário?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q4" id="q4_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q4_1">1</label>
+                                        <input type="radio" class="btn-check" name="q4" id="q4_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q4_2">2</label>
+                                        <input type="radio" class="btn-check" name="q4" id="q4_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q4_3">3</label>
+                                        <input type="radio" class="btn-check" name="q4" id="q4_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q4_4">4</label>
+                                        <input type="radio" class="btn-check" name="q4" id="q4_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q4_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        5. Suas decisões parecem não fazer diferença no resultado final?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q5" id="q5_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q5_1">1</label>
+                                        <input type="radio" class="btn-check" name="q5" id="q5_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q5_2">2</label>
+                                        <input type="radio" class="btn-check" name="q5" id="q5_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q5_3">3</label>
+                                        <input type="radio" class="btn-check" name="q5" id="q5_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q5_4">4</label>
+                                        <input type="radio" class="btn-check" name="q5" id="q5_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q5_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        6. Precisa refazer tarefas porque acha que não ficaram boas o suficiente?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q6" id="q6_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q6_1">1</label>
+                                        <input type="radio" class="btn-check" name="q6" id="q6_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q6_2">2</label>
+                                        <input type="radio" class="btn-check" name="q6" id="q6_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q6_3">3</label>
+                                        <input type="radio" class="btn-check" name="q6" id="q6_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q6_4">4</label>
+                                        <input type="radio" class="btn-check" name="q6" id="q6_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q6_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        7. Sente que seu esforço não é reconhecido?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q7" id="q7_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q7_1">1</label>
+                                        <input type="radio" class="btn-check" name="q7" id="q7_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q7_2">2</label>
+                                        <input type="radio" class="btn-check" name="q7" id="q7_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q7_3">3</label>
+                                        <input type="radio" class="btn-check" name="q7" id="q7_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q7_4">4</label>
+                                        <input type="radio" class="btn-check" name="q7" id="q7_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q7_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        8. Acaba fazendo tarefas que não eram sua responsabilidade?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q8" id="q8_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q8_1">1</label>
+                                        <input type="radio" class="btn-check" name="q8" id="q8_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q8_2">2</label>
+                                        <input type="radio" class="btn-check" name="q8" id="q8_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q8_3">3</label>
+                                        <input type="radio" class="btn-check" name="q8" id="q8_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q8_4">4</label>
+                                        <input type="radio" class="btn-check" name="q8" id="q8_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q8_5">5</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        9. Evita pedir ajuda mesmo quando precisa?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q9" id="q9_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q9_1">1</label>
+                                        <input type="radio" class="btn-check" name="q9" id="q9_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q9_2">2</label>
+                                        <input type="radio" class="btn-check" name="q9" id="q9_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q9_3">3</label>
+                                        <input type="radio" class="btn-check" name="q9" id="q9_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q9_4">4</label>
+                                        <input type="radio" class="btn-check" name="q9" id="q9_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q9_5">5</label>
+                                    </div>
+                                </div>
 
-                        <form id="burnoutForm">
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    1. Precisa se preparar mentalmente antes de começar o dia?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q1" id="q1_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q1_1">1</label>
-                                    <input type="radio" class="btn-check" name="q1" id="q1_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q1_2">2</label>
-                                    <input type="radio" class="btn-check" name="q1" id="q1_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q1_3">3</label>
-                                    <input type="radio" class="btn-check" name="q1" id="q1_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q1_4">4</label>
-                                    <input type="radio" class="btn-check" name="q1" id="q1_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q1_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        10. Evita conversar com colegas ou superiores sobre problemas?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q10" id="q10_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q10_1">1</label>
+                                        <input type="radio" class="btn-check" name="q10" id="q10_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q10_2">2</label>
+                                        <input type="radio" class="btn-check" name="q10" id="q10_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q10_3">3</label>
+                                        <input type="radio" class="btn-check" name="q10" id="q10_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q10_4">4</label>
+                                        <input type="radio" class="btn-check" name="q10" id="q10_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q10_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    2. Pequenas tarefas exigem mais energia do que deveriam?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q2" id="q2_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q2_1">1</label>
-                                    <input type="radio" class="btn-check" name="q2" id="q2_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q2_2">2</label>
-                                    <input type="radio" class="btn-check" name="q2" id="q2_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q2_3">3</label>
-                                    <input type="radio" class="btn-check" name="q2" id="q2_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q2_4">4</label>
-                                    <input type="radio" class="btn-check" name="q2" id="q2_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q2_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    3. Não consegue cumprir o que planeja mesmo se organizando bem?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q3" id="q3_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q3_1">1</label>
-                                    <input type="radio" class="btn-check" name="q3" id="q3_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q3_2">2</label>
-                                    <input type="radio" class="btn-check" name="q3" id="q3_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q3_3">3</label>
-                                    <input type="radio" class="btn-check" name="q3" id="q3_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q3_4">4</label>
-                                    <input type="radio" class="btn-check" name="q3" id="q3_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q3_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    4. Dificuldade de se desligar do trabalho fora do horário?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q4" id="q4_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q4_1">1</label>
-                                    <input type="radio" class="btn-check" name="q4" id="q4_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q4_2">2</label>
-                                    <input type="radio" class="btn-check" name="q4" id="q4_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q4_3">3</label>
-                                    <input type="radio" class="btn-check" name="q4" id="q4_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q4_4">4</label>
-                                    <input type="radio" class="btn-check" name="q4" id="q4_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q4_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    5. Suas decisões parecem não fazer diferença no resultado final?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q5" id="q5_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q5_1">1</label>
-                                    <input type="radio" class="btn-check" name="q5" id="q5_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q5_2">2</label>
-                                    <input type="radio" class="btn-check" name="q5" id="q5_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q5_3">3</label>
-                                    <input type="radio" class="btn-check" name="q5" id="q5_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q5_4">4</label>
-                                    <input type="radio" class="btn-check" name="q5" id="q5_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q5_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    6. Precisa refazer tarefas porque acha que não ficaram boas o suficiente?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q6" id="q6_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q6_1">1</label>
-                                    <input type="radio" class="btn-check" name="q6" id="q6_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q6_2">2</label>
-                                    <input type="radio" class="btn-check" name="q6" id="q6_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q6_3">3</label>
-                                    <input type="radio" class="btn-check" name="q6" id="q6_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q6_4">4</label>
-                                    <input type="radio" class="btn-check" name="q6" id="q6_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q6_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    7. Sente que seu esforço não é reconhecido?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q7" id="q7_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q7_1">1</label>
-                                    <input type="radio" class="btn-check" name="q7" id="q7_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q7_2">2</label>
-                                    <input type="radio" class="btn-check" name="q7" id="q7_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q7_3">3</label>
-                                    <input type="radio" class="btn-check" name="q7" id="q7_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q7_4">4</label>
-                                    <input type="radio" class="btn-check" name="q7" id="q7_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q7_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    8. Acaba fazendo tarefas que não eram sua responsabilidade?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q8" id="q8_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q8_1">1</label>
-                                    <input type="radio" class="btn-check" name="q8" id="q8_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q8_2">2</label>
-                                    <input type="radio" class="btn-check" name="q8" id="q8_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q8_3">3</label>
-                                    <input type="radio" class="btn-check" name="q8" id="q8_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q8_4">4</label>
-                                    <input type="radio" class="btn-check" name="q8" id="q8_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q8_5">5</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    9. Evita pedir ajuda mesmo quando precisa?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q9" id="q9_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q9_1">1</label>
-                                    <input type="radio" class="btn-check" name="q9" id="q9_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q9_2">2</label>
-                                    <input type="radio" class="btn-check" name="q9" id="q9_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q9_3">3</label>
-                                    <input type="radio" class="btn-check" name="q9" id="q9_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q9_4">4</label>
-                                    <input type="radio" class="btn-check" name="q9" id="q9_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q9_5">5</label>
-                                </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    10. Evita conversar com colegas ou superiores sobre problemas?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q10" id="q10_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q10_1">1</label>
-                                    <input type="radio" class="btn-check" name="q10" id="q10_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q10_2">2</label>
-                                    <input type="radio" class="btn-check" name="q10" id="q10_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q10_3">3</label>
-                                    <input type="radio" class="btn-check" name="q10" id="q10_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q10_4">4</label>
-                                    <input type="radio" class="btn-check" name="q10" id="q10_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q10_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        11. Funciona no “automático”, sem pensar muito no que faz?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q11" id="q11_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q11_1">1</label>
+                                        <input type="radio" class="btn-check" name="q11" id="q11_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q11_2">2</label>
+                                        <input type="radio" class="btn-check" name="q11" id="q11_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q11_3">3</label>
+                                        <input type="radio" class="btn-check" name="q11" id="q11_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q11_4">4</label>
+                                        <input type="radio" class="btn-check" name="q11" id="q11_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q11_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    11. Funciona no “automático”, sem pensar muito no que faz?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q11" id="q11_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q11_1">1</label>
-                                    <input type="radio" class="btn-check" name="q11" id="q11_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q11_2">2</label>
-                                    <input type="radio" class="btn-check" name="q11" id="q11_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q11_3">3</label>
-                                    <input type="radio" class="btn-check" name="q11" id="q11_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q11_4">4</label>
-                                    <input type="radio" class="btn-check" name="q11" id="q11_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q11_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        12. Sua mente fica acelerada mesmo sem pressão?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q12" id="q12_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q12_1">1</label>
+                                        <input type="radio" class="btn-check" name="q12" id="q12_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q12_2">2</label>
+                                        <input type="radio" class="btn-check" name="q12" id="q12_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q12_3">3</label>
+                                        <input type="radio" class="btn-check" name="q12" id="q12_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q12_4">4</label>
+                                        <input type="radio" class="btn-check" name="q12" id="q12_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q12_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    12. Sua mente fica acelerada mesmo sem pressão?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q12" id="q12_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q12_1">1</label>
-                                    <input type="radio" class="btn-check" name="q12" id="q12_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q12_2">2</label>
-                                    <input type="radio" class="btn-check" name="q12" id="q12_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q12_3">3</label>
-                                    <input type="radio" class="btn-check" name="q12" id="q12_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q12_4">4</label>
-                                    <input type="radio" class="btn-check" name="q12" id="q12_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q12_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        13. Não tem tempo suficiente para pausas ou descanso durante o dia?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q13" id="q13_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q13_1">1</label>
+                                        <input type="radio" class="btn-check" name="q13" id="q13_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q13_2">2</label>
+                                        <input type="radio" class="btn-check" name="q13" id="q13_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q13_3">3</label>
+                                        <input type="radio" class="btn-check" name="q13" id="q13_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q13_4">4</label>
+                                        <input type="radio" class="btn-check" name="q13" id="q13_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q13_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    13. Não tem tempo suficiente para pausas ou descanso durante o dia?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q13" id="q13_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q13_1">1</label>
-                                    <input type="radio" class="btn-check" name="q13" id="q13_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q13_2">2</label>
-                                    <input type="radio" class="btn-check" name="q13" id="q13_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q13_3">3</label>
-                                    <input type="radio" class="btn-check" name="q13" id="q13_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q13_4">4</label>
-                                    <input type="radio" class="btn-check" name="q13" id="q13_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q13_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        14. Irrita-se com coisas pequenas que normalmente não incomodariam?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q14" id="q14_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q14_1">1</label>
+                                        <input type="radio" class="btn-check" name="q14" id="q14_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q14_2">2</label>
+                                        <input type="radio" class="btn-check" name="q14" id="q14_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q14_3">3</label>
+                                        <input type="radio" class="btn-check" name="q14" id="q14_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q14_4">4</label>
+                                        <input type="radio" class="btn-check" name="q14" id="q14_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q14_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    14. Irrita-se com coisas pequenas que normalmente não incomodariam?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q14" id="q14_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q14_1">1</label>
-                                    <input type="radio" class="btn-check" name="q14" id="q14_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q14_2">2</label>
-                                    <input type="radio" class="btn-check" name="q14" id="q14_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q14_3">3</label>
-                                    <input type="radio" class="btn-check" name="q14" id="q14_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q14_4">4</label>
-                                    <input type="radio" class="btn-check" name="q14" id="q14_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q14_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        15. Perdeu o prazer em atividades que antes gostava?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q15" id="q15_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q15_1">1</label>
+                                        <input type="radio" class="btn-check" name="q15" id="q15_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q15_2">2</label>
+                                        <input type="radio" class="btn-check" name="q15" id="q15_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q15_3">3</label>
+                                        <input type="radio" class="btn-check" name="q15" id="q15_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q15_4">4</label>
+                                        <input type="radio" class="btn-check" name="q15" id="q15_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q15_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    15. Perdeu o prazer em atividades que antes gostava?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q15" id="q15_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q15_1">1</label>
-                                    <input type="radio" class="btn-check" name="q15" id="q15_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q15_2">2</label>
-                                    <input type="radio" class="btn-check" name="q15" id="q15_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q15_3">3</label>
-                                    <input type="radio" class="btn-check" name="q15" id="q15_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q15_4">4</label>
-                                    <input type="radio" class="btn-check" name="q15" id="q15_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q15_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        16. Sente que está sempre atrasado ou correndo atrás das demandas?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q16" id="q16_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q16_1">1</label>
+                                        <input type="radio" class="btn-check" name="q16" id="q16_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q16_2">2</label>
+                                        <input type="radio" class="btn-check" name="q16" id="q16_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q16_3">3</label>
+                                        <input type="radio" class="btn-check" name="q16" id="q16_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q16_4">4</label>
+                                        <input type="radio" class="btn-check" name="q16" id="q16_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q16_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    16. Sente que está sempre atrasado ou correndo atrás das demandas?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q16" id="q16_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q16_1">1</label>
-                                    <input type="radio" class="btn-check" name="q16" id="q16_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q16_2">2</label>
-                                    <input type="radio" class="btn-check" name="q16" id="q16_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q16_3">3</label>
-                                    <input type="radio" class="btn-check" name="q16" id="q16_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q16_4">4</label>
-                                    <input type="radio" class="btn-check" name="q16" id="q16_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q16_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        17. Seu corpo reage ao estresse antes de você perceber?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q17" id="q17_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q17_1">1</label>
+                                        <input type="radio" class="btn-check" name="q17" id="q17_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q17_2">2</label>
+                                        <input type="radio" class="btn-check" name="q17" id="q17_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q17_3">3</label>
+                                        <input type="radio" class="btn-check" name="q17" id="q17_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q17_4">4</label>
+                                        <input type="radio" class="btn-check" name="q17" id="q17_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q17_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    17. Seu corpo reage ao estresse antes de você perceber?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q17" id="q17_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q17_1">1</label>
-                                    <input type="radio" class="btn-check" name="q17" id="q17_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q17_2">2</label>
-                                    <input type="radio" class="btn-check" name="q17" id="q17_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q17_3">3</label>
-                                    <input type="radio" class="btn-check" name="q17" id="q17_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q17_4">4</label>
-                                    <input type="radio" class="btn-check" name="q17" id="q17_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q17_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        18. Mesmo descansando, não recupera totalmente a energia?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q18" id="q18_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q18_1">1</label>
+                                        <input type="radio" class="btn-check" name="q18" id="q18_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q18_2">2</label>
+                                        <input type="radio" class="btn-check" name="q18" id="q18_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q18_3">3</label>
+                                        <input type="radio" class="btn-check" name="q18" id="q18_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q18_4">4</label>
+                                        <input type="radio" class="btn-check" name="q18" id="q18_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q18_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    18. Mesmo descansando, não recupera totalmente a energia?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q18" id="q18_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q18_1">1</label>
-                                    <input type="radio" class="btn-check" name="q18" id="q18_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q18_2">2</label>
-                                    <input type="radio" class="btn-check" name="q18" id="q18_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q18_3">3</label>
-                                    <input type="radio" class="btn-check" name="q18" id="q18_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q18_4">4</label>
-                                    <input type="radio" class="btn-check" name="q18" id="q18_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q18_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        19. Sente que precisa provar constantemente que é competente?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q19" id="q19_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q19_1">1</label>
+                                        <input type="radio" class="btn-check" name="q19" id="q19_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q19_2">2</label>
+                                        <input type="radio" class="btn-check" name="q19" id="q19_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q19_3">3</label>
+                                        <input type="radio" class="btn-check" name="q19" id="q19_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q19_4">4</label>
+                                        <input type="radio" class="btn-check" name="q19" id="q19_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q19_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    19. Sente que precisa provar constantemente que é competente?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q19" id="q19_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q19_1">1</label>
-                                    <input type="radio" class="btn-check" name="q19" id="q19_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q19_2">2</label>
-                                    <input type="radio" class="btn-check" name="q19" id="q19_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q19_3">3</label>
-                                    <input type="radio" class="btn-check" name="q19" id="q19_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q19_4">4</label>
-                                    <input type="radio" class="btn-check" name="q19" id="q19_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q19_5">5</label>
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        20. Sente que não tem controle sobre como seu dia acontece?
+                                    </label>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <input type="radio" class="btn-check" name="q20" id="q20_1" value="1" required>
+                                        <label class="btn btn-outline-primary" for="q20_1">1</label>
+                                        <input type="radio" class="btn-check" name="q20" id="q20_2" value="2">
+                                        <label class="btn btn-outline-primary" for="q20_2">2</label>
+                                        <input type="radio" class="btn-check" name="q20" id="q20_3" value="3">
+                                        <label class="btn btn-outline-primary" for="q20_3">3</label>
+                                        <input type="radio" class="btn-check" name="q20" id="q20_4" value="4">
+                                        <label class="btn btn-outline-primary" for="q20_4">4</label>
+                                        <input type="radio" class="btn-check" name="q20" id="q20_5" value="5">
+                                        <label class="btn btn-outline-primary" for="q20_5">5</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    20. Sente que não tem controle sobre como seu dia acontece?
-                                </label>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <input type="radio" class="btn-check" name="q20" id="q20_1" value="1" required>
-                                    <label class="btn btn-outline-primary" for="q20_1">1</label>
-                                    <input type="radio" class="btn-check" name="q20" id="q20_2" value="2">
-                                    <label class="btn btn-outline-primary" for="q20_2">2</label>
-                                    <input type="radio" class="btn-check" name="q20" id="q20_3" value="3">
-                                    <label class="btn btn-outline-primary" for="q20_3">3</label>
-                                    <input type="radio" class="btn-check" name="q20" id="q20_4" value="4">
-                                    <label class="btn btn-outline-primary" for="q20_4">4</label>
-                                    <input type="radio" class="btn-check" name="q20" id="q20_5" value="5">
-                                    <label class="btn btn-outline-primary" for="q20_5">5</label>
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary btn-lg" onclick="mostraResultado()"
+                                        type="submit">Enviar
+                                        respostas</button>
                                 </div>
-                            </div>
 
-        
-                            <div class="text-center mt-4">
-                                <button class="btn btn-primary btn-lg" onclick="mostraValor()" type="submit">Enviar respostas</button>
-                            </div>
+                            </form>
 
-                        </form>
-
-                        <div id="resultado" class="mt-4 fs-5 text-center"></div>
-
+                            <div id="resultado" class="mt-4 fs-5 text-center"></div>
+                        </div>
                     </div>
                 </div>
-
+                <div class="col-lg-4 topo" id="escrito">aaaaaaaaaaaa</div>
             </div>
+            </div>
+
         </section>
 
         <script>
@@ -423,17 +427,40 @@
                 return selecionado ? Number(selecionado.value) : 0;
             }
 
-            function mostraValor(){
+            function mostraValor() {
                 let total = 0
 
-                for (let i = 1; i <= 20; i++){
-                    total =+ pegaValor(`q${i}`)
+                for (let i = 1; i <= 20; i++) {
+                    total += pegaValor(`q${i}`)
 
                 }
 
-                 alert("Sua pontuação total é: " + total);
+                let resultado = (total / 20)
+
+                if (resultado > 0 && resultado < 2) {
+                    let mensagem = "vc não tem burnout"
+                } else if (resultado > 2.1 && resultado < 3.4) {
+                    let mensagem = "burn out médio"
+                }
+                else {
+                    let mensagem = "ta fudido"
+
+                }
+                return mensagem
+
+                alert("Sua pontuação total é: " + resultado);
+
+
             }
 
+            function mostraResultado() {
+                const texto = mostraValor();
+                document.getElementById("escrito").innerHTML =
+                    `
+                 <h3>Seu resultado apareceu!</h3>
+                 <p> ${texto}</p>
+                `
+            }
 
         </script>
     </body>
