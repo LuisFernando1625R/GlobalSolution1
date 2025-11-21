@@ -162,14 +162,6 @@ header {
     text-align: center;
     justify-items: center;
 }
-<<<<<<< HEAD
-
-/* Teste - img do fundo do carrossel*/
-.teste-img-carrossel {
-    background-color: #eef7fd8e;
-    background-size: cover;
-    border-radius: 20px;
-}
 
 
 .bg-mint-green {
@@ -199,11 +191,15 @@ header {
     font-size: 2.5rem;
 } 
 
+.btn-emojis {
+    color: var(--cor-roxo);
+    font-size: 1.5rem;
+}
 
 
 
 
-=======
+
 .top{
     padding-top: 300px;
 }
@@ -227,4 +223,4 @@ header {
       margin-right: 10px;
       display: inline-block;
     }
->>>>>>> 521a9fa2ebd9f57421e55ec4b4c3c8a6e9c499e7
+
