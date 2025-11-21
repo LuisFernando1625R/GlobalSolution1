@@ -17,7 +17,7 @@
     --cor-salmao-rosado-muito-triste: #fda197;
     
 }
-
+/* 
 header {
     width: 100%;
     position:fixed;
@@ -56,7 +56,50 @@ header {
 }
 .home-nav-links a:hover {
     color: var(--cor-roxo);
-}
+} */
+
+/* <header>
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <img src="/img/img-logo-mindwork-semfundo-semtitulo.png" alt="Logo MindWork" class="home-nav-logo me-2">
+                <span id="home-nav-span">𝑀𝑖𝑛𝑑𝑊𝑜𝑟𝑘</span>
+            </div>
+
+            <!-- Botão Hamburguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMindwork"
+                aria-controls="navbarMindwork" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links do Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarMindwork">
+                <ul class="navbar-nav mb-2 mb-lg-0 home-nav-links">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home-section1">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vídeo Pitch</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/recomendacao.html">Recomendação</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/fale-conosco.html">Fale Conosco</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header> */
 
 .container {
     display: flex;
@@ -196,10 +239,6 @@ header {
     font-size: 1.5rem;
 }
 
-
-
-
-
 .top{
     padding-top: 300px;
 }
@@ -224,3 +263,69 @@ header {
       display: inline-block;
     }
 
+/* CÓDIGO NOVO DO HEADER */
+
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: auto;
+    padding: 0 77px;
+    margin: 0; 
+    background-color: #fff;
+}
+
+.home-nav-logo {
+    height: 30px;
+}
+
+.home-nav, .home-nav nav,
+.home-nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.home-nav-links {
+    min-width: fit-content;
+    max-width: 700px;
+    margin: 0;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.home-nav-links li {
+    list-style: none;
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.home-nav-links li a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.home-nav-links li a:hover {
+    font-weight: 800;
+}
+
+
+@media screen and (max-width:890px) {
+    .container-header{
+        padding-top: 20px;
+        height: min-content;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .titulo-principal{
+        padding-top: 10px;
+    }
+    .home-nav-links{
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+}
