@@ -402,11 +402,10 @@
                                 </div>
 
 
-                                <div class="text-center mt-4">
-                                    <button class="btn btn-primary btn-lg" onclick="mostraResultado()"
-                                        type="submit">Enviar
-                                        respostas</button>
-                                </div>
+                                <button class="btn btn-primary btn-lg" onclick="mostraResultado()" type="button">
+                                    Enviar respostas
+                                </button>
+
 
                             </form>
 
@@ -414,7 +413,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 topo" id="escrito">aaaaaaaaaaaa</div>
+                <div class="col-lg-4 topo" id="escrito"></div>
             </div>
             </div>
 
@@ -428,41 +427,44 @@
             }
 
             function mostraValor() {
-                let total = 0
+                let total = 0;
 
                 for (let i = 1; i <= 20; i++) {
-                    total += pegaValor(`q${i}`)
-
+                    total += pegaValor(`q${i}`);
                 }
 
-                let resultado = (total / 20)
+                let resultado = total / 20;
+
+                let mensagem = "";
 
                 if (resultado > 0 && resultado < 2) {
-                    let mensagem = "vc não tem burnout"
-                } else if (resultado > 2.1 && resultado < 3.4) {
-                    let mensagem = "burn out médio"
+                    mensagem = "vc não tem burnout";
+                } else if (resultado >= 2 && resultado < 3.4) {
+                    mensagem = "burn out médio";
+                } else {
+                    mensagem = "ta fudido";
                 }
-                else {
-                    let mensagem = "ta fudido"
 
-                }
-                return mensagem
-
-                alert("Sua pontuação total é: " + resultado);
-
-
+                return mensagem;
             }
 
             function mostraResultado() {
                 const texto = mostraValor();
-                document.getElementById("escrito").innerHTML =
-                    `
-                 <h3>Seu resultado apareceu!</h3>
-                 <p> ${texto}</p>
-                `
+                document.getElementById("escrito").innerHTML = `
+                <h3>Seu resultado apareceu!</h3>
+                <p>${texto}</p>
+            `;
+             window.scroll(
+                {
+                    top: 0,
+                    behavior: "smooth"
+                }
+            )
             }
+           
 
         </script>
+
     </body>
 
 </html>
