@@ -471,6 +471,16 @@
                 });
                 resultadoTexto += "</ol>";
                 document.getElementById("resultado").innerHTML = resultadoTexto;
+
+                const medias = {};
+                for (const categoria in categorias) {
+                    medias[categoria] = pontuacoes[categoria] / categorias[categoria].length;
+                }
+
+                sessionStorage.setItem("pontuacoesEstresse", JSON.stringify(pontuacoes));
+                sessionStorage.setItem("respostasEstresse", JSON.stringify(top3));
+                sessionStorage.setItem("mediasEstresse", JSON.stringify(medias));
+                window.location.href = "recomendacao.html";
             }
         </script>
 
