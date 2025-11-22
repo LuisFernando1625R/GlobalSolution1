@@ -428,47 +428,31 @@
 
         <script>
 
-            function pegaValor(name) {
-                const selecionado = document.querySelector(`input[name="${name}"]:checked`)
-                return selecionado ? Number(selecionado.value) : 0;
-            }
-
-            function mostraValor() {
-                let total = 0;
+            function mostraResultado() {
+                const respostas = [];
 
                 for (let i = 1; i <= 20; i++) {
-                    total += pegaValor(`q${i}`);
+                    const selecionado = document.querySelector(`input[name="q${i}"]:checked`);
+
+                    if (selecionado) {
+                        respostas.push({
+                            pergunta: i,
+                            valor: Number(selecionado.value)
+                        });
+                    } else {
+                        respostas.push({
+                            pergunta: i,
+                            valor: 0
+                        });
+                    }
                 }
 
-                let resultado = total / 20;
-
-                let mensagem = "";
-
-                if (resultado > 0 && resultado < 2) {
-                    mensagem = "vc não tem burnout";
-                } else if (resultado >= 2 && resultado < 3.4) {
-                    mensagem = "burn out médio";
-                } else {
-                    mensagem = "ta fudido";
-                }
-
-                return mensagem;
+                console.log(respostas);
+                return respostas;
+            
             }
 
-            function mostraResultado() {
-                const texto = mostraValor();
-                document.getElementById("escrito").innerHTML = `
-                <h3>Seu resultado apareceu!</h3>
-                <p>${texto}</p>
-            `;
-             window.scroll(
-                {
-                    top: 0,
-                    behavior: "smooth"
-                }
-            )
-            }
-           
+            
 
         </script>
 
