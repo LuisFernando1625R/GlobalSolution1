@@ -49,52 +49,53 @@
 
     <main>
         <section>
-            <div class="fale-conosco-section1 d-flex justify-content-center align-items-center">
-                <div class="container d-block">
+           <div class="fale-conosco-section1 d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center">
 
-                    <div class="row">
-                        <div class="col-8 offset-2">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="form-card p-4 shadow-lg rounded-4">
 
-                            <form class=" form text-align-center img-fale-conosco-formulario py-3" id="meu-formulario">
-                                <div class="col-8 mb-3 offset-2 text-start">
+                <h2 class="text-center mb-4 titulo-form">Fale Conosco</h2>
 
-                                    <label for="fale-conosco-nome" class="form-label ">Nome Completo</label>
-                                    <input type="text" name="fale-conosco-nome" id="fale-conosco-nome"
-                                        class="form-control" placeholder="Digite seu nome completo" pattern=".*\s+.*"
-                                        title="Por favor, digite seu nome completo (incluindo um espaço)." required>
-                                </div>
+                <form id="meu-formulario">
 
-                                <div class="col-8 mb-3 offset-2 text-start">
-                                    <label for="fale-conosco-email" class="form-label">Melhor Email</label>
-                                    <input type="email" name="fale-conosco-email" id="fale-conosco-email"
-                                        class="form-control" placeholder="Digite seu melhor email">
-                                </div>
-
-                                <div class="col-8 mb-3 offset-2 text-start">
-                                    <label for="fale-conosco-tel" class="form-label">Telefone (DDD + 9 dígitos):</label>
-                                    <input type="tel" name="fale-conosco-tel" id="fale-conosco-tel" class="form-control"
-                                        placeholder="(00) 00000-0000" pattern="^\(\d{2}\)\s\d{5}-\d{4}$"
-                                        title="Digite um telefone válido no formato (XX) 9XXXX-XXXX" required>
-                                </div>
-
-                                <div class="col-8 mb-3 offset-2 text-start">
-                                    <label for="fale-conosco-comentario" class="form-label">Comentário</label>
-                                    <textarea name="fale-conosco-comentario" id="fale-conosco-comentario"
-                                        class="form-control" row=5 colo="20" placeholder="Gostaria de falar sobre..."
-                                        required></textarea>
-                                </div>
-
-                                <div class="mb-3 col-12">
-                                    <button type="submit" class="btn btn-primary ">Enviar</button>
-                                </div>
-
-                                <div id="mensagem-de-sucesso" class="alert  text-center mt-3"
-                                    style="display:none;">Formulário enviado com sucesso!</div>
-                            </form>
-                        </div>
+                    <div class="mb-3">
+                        <label for="fale-conosco-nome" class="form-label fw-semibold">Nome Completo</label>
+                        <input type="text" class="form-control form-control-lg input-estiloso"
+                            id="fale-conosco-nome" placeholder="Digite seu nome completo" required>
                     </div>
-                </div>
+
+                    <div class="mb-3">
+                        <label for="fale-conosco-email" class="form-label fw-semibold">Melhor Email</label>
+                        <input type="email" class="form-control form-control-lg input-estiloso"
+                            id="fale-conosco-email" placeholder="exemplo@email.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fale-conosco-tel" class="form-label fw-semibold">Telefone</label>
+                        <input type="tel" class="form-control form-control-lg input-estiloso"
+                            id="fale-conosco-tel" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fale-conosco-comentario" class="form-label fw-semibold">Comentário</label>
+                        <textarea class="form-control form-control-lg input-estiloso" id="fale-conosco-comentario"
+                            rows="4" placeholder="Digite sua mensagem..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-gradiente w-100 py-3 rounded-4 fw-bold">
+                        Enviar Mensagem
+                    </button>
+
+                    <div id="mensagem-de-sucesso" class="alert alert-success text-center mt-3"
+                        style="display:none;">Formulário enviado com sucesso!</div>
+
+                </form>
             </div>
+        </div>
+    </div>
+</div>
+
         </section>
     </main>
 

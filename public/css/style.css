@@ -316,3 +316,53 @@ ul {
         padding: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+/* Card com visual moderno */
+.form-card {
+    background: #ffffffd5;
+    backdrop-filter: blur(6px);
+    border: 1px solid #ececec;
+}
+
+/* Títulos */
+.titulo-form {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #794EFD;
+}
+
+/* Inputs */
+.input-estiloso {
+    border-radius: 10px !important;
+    border: 1px solid #d5d5d5 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-estiloso:focus {
+    border-color: #794EFD !important;
+    box-shadow: 0 0 8px rgba(121, 78, 253, 0.3) !important;
+}
+
+/* Botão gradiente estilo MindyPulse */
+.btn-gradiente {
+    background: linear-gradient(90deg, #794EFD, #57BAFD, #FBD1CC);
+    background-size: 200%;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    transition: 0.4s;
+}
+
+.btn-gradiente:hover {
+    transform: scale(1.03);
+    background-position: right;
+    box-shadow: 0 0 12px rgba(121, 78, 253, 0.4);
+}
