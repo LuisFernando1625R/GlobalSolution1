@@ -298,6 +298,15 @@ ul {
     font-weight: 800;
 }
 
+/* EXPLICAÇÃO DO FORM */
+.explicacao-form{
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.explicacao-form ul li{
+    list-style: none;
+    font-weight: 500;
+}
 
 @media screen and (max-width:890px) {
     .container-header{

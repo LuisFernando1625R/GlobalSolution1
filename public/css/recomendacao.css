@@ -83,6 +83,8 @@ section {
 p {
     margin: 0;
     padding: 5px 25px;
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
 }
 
 .card-indicacao, .card-recomendacao-por-nivel, h3, .sub-subtitulo {
@@ -158,11 +160,6 @@ p {
 .card-recomendacao-por-nivel {
     width: 30%;
     gap: 15px;
-}
-
-p{
-    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1rem;
 }
 
 .lista-links-saiba-mais{
