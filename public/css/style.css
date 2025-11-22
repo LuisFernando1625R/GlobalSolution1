@@ -202,7 +202,7 @@ ul {
 
 /* Recomendação - img de fundo*/
 #teste-section1 {
-    background-image: url(/img/img-recomendacao-fundo.jpg);
+    background-image: url(/img/img-teste-fundo.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
@@ -250,10 +250,7 @@ ul {
     padding-top: 300px;
 }
 
-.bg {
-    background-image: url(/img/img-home-section1.jpg);
-    background-size: cover;
-}
+
 
 .pergunta {
     margin-bottom: 15px;
