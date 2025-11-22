@@ -50,7 +50,7 @@
     </header>
 
         <section class="top">
-            <div class="container py-4 ">
+            <div class="container py-5">
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="">
@@ -429,31 +429,49 @@
         <script>
 
             function mostraResultado() {
-                const respostas = [];
+                const respostas = {};
 
                 for (let i = 1; i <= 20; i++) {
                     const selecionado = document.querySelector(`input[name="q${i}"]:checked`);
-
-                    if (selecionado) {
-                        respostas.push({
-                            pergunta: i,
-                            valor: Number(selecionado.value)
-                        });
-                    } else {
-                        respostas.push({
-                            pergunta: i,
-                            valor: 0
-                        });
-                    }
+                    respostas[i] = selecionado ? Number(selecionado.value) : 0;
                 }
 
-                console.log(respostas);
-                return respostas;
-            
+                const categorias = {
+                    "Exaustão emocional": [1, 2, 11, 18],
+                    "Sobrecarga de trabalho": [3, 8, 13, 16],
+                    "Consequências físicas": [4, 17],
+                    "Falta de autonomia": [5, 12, 20],
+                    "Autocrítica": [6],
+                    "Falta de reconhecimento": [7, 19],
+                    "Ambiente inseguro": [9, 10],
+                    "Conflito emocional": [14],
+                    "Perda de realização pessoal": [15]
+                };
+
+                const pontuacoes = {};
+
+                for (const categoria in categorias) {
+                    let soma = 0;
+                    categorias[categoria].forEach(numeroPergunta => {
+                        soma += respostas[numeroPergunta];
+                    });
+                    pontuacoes[categoria] = soma;
+                }
+
+                const top3 = Object.entries(pontuacoes)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 3);
+
+                console.log("Pontuações por categoria:", pontuacoes);
+                console.log("Top 3 categorias:", top3);
+
+                let resultadoTexto = "<h4>Suas principais áreas de estresse são:</h4><ol>";
+                top3.forEach(([categoria, pontuacao]) => {
+                    resultadoTexto += `<li><strong>${categoria}:</strong> ${pontuacao} pontos</li>`;
+                });
+                resultadoTexto += "</ol>";
+                document.getElementById("resultado").innerHTML = resultadoTexto;
             }
-
-            
-
         </script>
 
     </body>
