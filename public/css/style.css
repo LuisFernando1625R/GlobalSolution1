@@ -209,9 +209,9 @@ ul {
     justify-items: center;
 }
 
-<<<<<<< HEAD
-.top {
-=======
+
+.top 
+
 
 .bg-mint-green {
     background-color: var(--cor-verde-feliz);
@@ -246,7 +246,7 @@ ul {
 }
 
 .top{
->>>>>>> db4acc014461b073a5aa24f7715142ee430b40f3
+
     padding-top: 300px;
 }
 
@@ -269,7 +269,7 @@ ul {
     border-bottom: 1px solid #ddd;
 }
 
-<<<<<<< HEAD
+
 .opcoes label {
     margin-right: 10px;
     display: inline-block;
@@ -285,7 +285,8 @@ ul {
    align-self: flex-start;
    margin-top: 40px;
    padding: 10px;
-=======
+}
+
 /* CÓDIGO NOVO DO HEADER */
 
 .container-header{
@@ -356,5 +357,4 @@ ul {
         gap: 5px;
         padding: 10px;
     }
->>>>>>> db4acc014461b073a5aa24f7715142ee430b40f3
 }
