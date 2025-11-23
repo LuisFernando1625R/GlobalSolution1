@@ -53,11 +53,10 @@
         </div>
     </header>
 
-        <section class="top">
-            <div class="container py-5">
+        <section class="container align-items-center justify-content-center py-5 mt-5">
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="">
+                        <div>
                             <h3 class="text-center">Questionário de Burnout</h3>
                             <div class="explicacao-form">
                                 <p>Avalie cada afirmação a baixo com uma nota de 1 a 5, onde:</p>
@@ -422,20 +421,15 @@
                                     </div>
                                 </div>
 
-
                                 <button class="btn btn-primary btn-lg" onclick="mostraResultado()" type="button">
                                     Enviar respostas
                                 </button>
 
-
                             </form>
 
-                            <div id="resultado" class="mt-4 fs-5 text-center"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 topo" id="escrito"></div>
-            </div>
             </div>
 
         </section>
@@ -475,16 +469,6 @@
                 const top3 = Object.entries(pontuacoes)
                     .sort((a, b) => b[1] - a[1])
                     .slice(0, 3);
-
-                console.log("Pontuações por categoria:", pontuacoes);
-                console.log("Top 3 categorias:", top3);
-
-                let resultadoTexto = "<h4>Suas principais áreas de estresse são:</h4><ol>";
-                top3.forEach(([categoria, pontuacao]) => {
-                    resultadoTexto += `<li><strong>${categoria}:</strong> ${pontuacao} pontos</li>`;
-                });
-                resultadoTexto += "</ol>";
-                document.getElementById("resultado").innerHTML = resultadoTexto;
 
                 const medias = {};
                 for (const categoria in categorias) {
