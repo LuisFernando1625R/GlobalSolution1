@@ -42,7 +42,11 @@
                                     <a class="nav-link" href="teste.html">Faça o Teste</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="recomendacao.html">Recomendações</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="fale-conosco.html">Contato</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -52,7 +56,6 @@
     </header>
     <main class="py-5 mt-5">
         <section>
-            <h1 class="subtitulo">Aqui está o resultado da sua avaliação:</h1>
             <div id="resultado" class="mt-4 fs-5 text-center"></div>
         </section>
         <section>
@@ -186,15 +189,20 @@
             } else if (total <= 74) {
                 return nivel = "<span class='badge bg-warning'>Entre 41 e 74: Leve Risco de Burnout</span>";
             } else {
-                return nivel = "<span class='badge bg-danger-subtle text-white'>Entre 75 e 100: Alto Risco de Burnout</span>";
+                return nivel = "<span class='badge bg-danger text-white'>Entre 75 e 100: Alto Risco de Burnout</span>";
             }
 
             return nivel;
         }
 
-        let resultadoTexto = `<h4>Sua pontuação total é: <strong>${pontuacaoGeral(pontuacoes)}</strong> pontos<br>`;
-        resultadoTexto += `Classificação: <strong>${mostrarTotal(pontuacoes)}</strong></h4>`;
-        resultadoDiv.innerHTML = resultadoTexto;
+        if (pontuacoes) {
+            let apresentaResultado = "<h1 class='subtitulo'>Aqui está o resultado da sua avaliação:</h1>\n";
+            let resultadoTexto = `<h4>Sua pontuação total é: <strong>${pontuacaoGeral(pontuacoes)}</strong> pontos<br>`;
+            resultadoTexto += `Classificação: <strong>${mostrarTotal(pontuacoes)}</strong></h4>`;
+            let refazer = "<a><button class='btn btn-primary mt-3' onclick='location.href=\"teste.html\"'>Refazer Teste</button></a>";
+
+            resultadoDiv.innerHTML = apresentaResultado + resultadoTexto + refazer;
+        }
     </script>
 </body>
 
