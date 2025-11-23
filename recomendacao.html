@@ -39,7 +39,7 @@
                                     <a class="nav-link" href="index.html">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="teste2.html">Faça o Teste</a>
+                                    <a class="nav-link" href="teste.html">Faça o Teste</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="fale-conosco.html">Contato</a>
@@ -172,15 +172,17 @@
 
         function pontuacaoGeral(pontuacoes) {
             let total = 0;
-            pontuacoes.forEach(categoria => total += categoria[1]);
+            for (const key in pontuacoes) {
+                total += pontuacoes[key];
+            }
             return total;
         }
 
-        function mostrarTotal() {
-            const total = pontuacaoGeral(top3);
+        function mostrarTotal(pontuacoes) {
+            const total = pontuacaoGeral(pontuacoes);
             let nivel = "";
             if (total <= 40) {
-                return nivel = "Entre 20 e 40: Baixo Risco de Burnout";
+                return nivel = "<span class='badge bg-success'>Entre 20 e 40: Baixo Risco de Burnout</span>";
             } else if (total <= 74) {
                 return nivel = "<span class='badge bg-warning'>Entre 41 e 74: Leve Risco de Burnout</span>";
             } else {
@@ -190,7 +192,7 @@
             return nivel;
         }
 
-        let resultadoTexto = `<h4>Sua pontuação total é: <strong>${total}</strong> pontos<br>`;
+        let resultadoTexto = `<h4>Sua pontuação total é: <strong>${pontuacaoGeral(pontuacoes)}</strong> pontos<br>`;
         resultadoTexto += `Classificação: <strong>${mostrarTotal(pontuacoes)}</strong></h4>`;
         resultadoDiv.innerHTML = resultadoTexto;
     </script>
