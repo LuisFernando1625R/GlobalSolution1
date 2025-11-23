@@ -178,7 +178,7 @@
             for (const key in pontuacoes) {
                 total += pontuacoes[key];
             }
-            return total;
+            return `<h3>Pontuação total: <strong>${total}</strong> pontos</h3>`;
         }
 
         function mostrarTotal(pontuacoes) {
@@ -192,16 +192,35 @@
                 return nivel = "<span class='badge bg-danger text-white'>Entre 75 e 100: Alto Risco de Burnout</span>";
             }
 
-            return nivel;
+            return `<h4><strong>${nivel}</strong></h4>`;
+        }
+
+        function mostrarMedias(medias) {
+            let mediasTexto = "<h3>Suas médias por dimensão são:</h3><ul>";
+            for (const dimensao in medias) {
+                mediasTexto += `<li><strong>${dimensao}:</strong> ${medias[dimensao].toFixed(2)}</li>\n`;
+            }
+            mediasTexto += "</ul>";
+            return mediasTexto;
+        }
+
+        function mostrarTop3(top3) {
+            const html = top3.map(([nome, valor], index) => {
+                return `<li>${index + 1}º mais alta: <strong>${nome}</strong> com nota ${valor.toFixed(2)}</li>`;
+            }).join("");
+            return `<h3>Essas são as áreas onde você deve ter maior atenção:</h3><ul>${html}</ul>\n`;
         }
 
         if (pontuacoes) {
-            let apresentaResultado = "<h1 class='subtitulo'>Aqui está o resultado da sua avaliação:</h1>\n";
-            let resultadoTexto = `<h4>Sua pontuação total é: <strong>${pontuacaoGeral(pontuacoes)}</strong> pontos<br>`;
-            resultadoTexto += `Classificação: <strong>${mostrarTotal(pontuacoes)}</strong></h4>`;
+            let apresentaResultado = "<h1 class='subtitulo'>Aqui está o relatório da sua avaliação:</h1>\n";
+            let pontuacaoTotal = pontuacaoGeral(pontuacoes);
+            let resultadoTexto = mostrarTotal(pontuacoes);
+            let mediasTexto = mostrarMedias(medias);
+            let top3Texto = mostrarTop3(top3);
             let refazer = "<a><button class='btn btn-primary mt-3' onclick='location.href=\"teste.html\"'>Refazer Teste</button></a>";
 
-            resultadoDiv.innerHTML = apresentaResultado + resultadoTexto + refazer;
+
+            resultadoDiv.innerHTML = apresentaResultado + pontuacaoTotal + resultadoTexto + mediasTexto + top3Texto + refazer;
         }
     </script>
 </body>
