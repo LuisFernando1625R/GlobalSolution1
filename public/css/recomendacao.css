@@ -1,29 +1,66 @@
+* {
+    box-sizing: border-box;
+}
 
-body{
-    background-color: #ffffff;
+body {
+    min-height: 100vh;
+    background-color: #fff;
     background-image: 
-    radial-gradient(circle at 15% 20%, rgba(125, 188, 230, 0.35) 0%, rgba(125, 188, 230, 0) 55%),
-    radial-gradient(circle at 85% 60%, rgba(194, 185, 231, 0.35) 0%, rgba(194, 185, 231, 0) 55%);           
+        radial-gradient(circle at 15% 20%, rgba(125, 188, 230, 0.35) 0%, rgba(125, 188, 230, 0) 55%),
+        radial-gradient(circle at 85% 60%, rgba(194, 185, 231, 0.35) 0%, rgba(194, 185, 231, 0) 55%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;}
+}
 
-.container-header{
+ul, dl, dt, dd, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    padding: 5px 25px;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.titulo-principal,
+.subtitulo,
+.sub-subtitulo {
+    text-align: center;
+    font-family: 'Quicksand', "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.titulo-principal {
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.sub-subtitulo {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 490;
+}
+
+.container-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    width: auto;
     padding: 0 77px;
-    margin: 0; 
     background-color: #fff;
 }
 
-.home-nav-logo {
-    height: 30px;
-}
-
-.home-nav, .home-nav nav,
+.home-nav,
+.home-nav nav,
 .home-nav-links {
     display: flex;
     align-items: center;
@@ -31,14 +68,15 @@ body{
 
 .home-nav-links {
     width: 300px;
-    margin: 0;
     justify-content: space-evenly;
-    flex-direction: row;
+}
+
+.home-nav-logo {
+    height: 30px;
 }
 
 .home-nav-links li {
-    list-style: none;
-    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -57,101 +95,70 @@ main {
     margin: 0 20px;
 }
 
-dl,dt,dd{
-    margin:0;  
-}
-
-dl{
-    padding: 0px 50px;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    list-style: none;
+dl {
+    padding: 0 50px;
 }
 
 section {
-    margin: 0px 20px 50px 20px;
+    margin: 0 20px 50px;
 }
 
-p {
-    margin: 0;
-    padding: 5px 25px;
-    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.8rem;
-}
-
-.card-indicacao, .card-recomendacao-por-nivel, h3, .sub-subtitulo {
+.card-indicacao,
+.card-recomendacao-por-nivel,
+h3,
+.sub-subtitulo {
     overflow-wrap: break-word;
     word-break: break-word;
-    box-sizing: border-box;
+    margin: 0;
+}
+
+.sub-subtitulo{
+    padding: 2px;
 }
 
 #card-separado {
     width: 93.5%;
 }
 
-#pomofocus-link{
+#pomofocus-link,
+.link-saiba-mais {
     text-decoration: underline;
     color: #000;
 }
 
-.titulo-principal, .subtitulo, .sub-subtitulo {
-    box-sizing: border-box;
-    text-align: center;
-    font-family: 'QuickSand',"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-.titulo-principal{
-    font-size: 2.5rem;
-    margin: 30px 0px;
-}
-
-.subtitulo {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-}
-
-.sub-subtitulo{
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 10px;
-    font-weight: 490;
-}
-
-.indicacoes, .recomendacoes {
+.indicacoes,
+.recomendacoes,
+.lista-links-saiba-mais {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 25px;
-    box-sizing: border-box;
     margin: 0;
 }
 
 .recomendacoes {
     justify-content: center;
-    margin: 0;
-    box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.4);
+    align-items: center;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.4);
     background-color: #fff;
     border-radius: 24px;
-    justify-content: center;
-    align-items: center;
 }
 
-.card-indicacao{
+.card-indicacao {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 16px;
     width: 20%;
-    gap: 15px;
     border-radius: 24px;
-    box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.4);
+    box-shadow: 0 9px 18px rgba(0,0,0,0.4);
     background-color: #fff;
+}
+
+.card-indicacao p{
+    padding: 0px 5px;
+    text-align: center;
 }
 
 .card-recomendacao-por-nivel {
@@ -160,87 +167,71 @@ p {
     margin: 10px;
 }
 
-.lista-links-saiba-mais{
-    display: flex;
+.lista-links-saiba-mais {
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 0;
 }
 
-.item-lista-links-saiba-mais{
+.item-lista-links-saiba-mais {
     display: flex;
     justify-content: center;
 }
 
-.link-saiba-mais{
-    text-decoration: underline;
-    color: #000;
+.link-saiba-mais {
     font-size: 0.7rem;
     text-align: center;
- }
+}
 
 @media screen and (max-width: 740px) {
-.card-indicacao, #card-separado {
-    width: 95%;
-    padding: 10px;
-}
-p {
-    text-align: justify;
-}
-dl{
-    padding: 0;
+    .card-indicacao,
+    #card-separado {
+        width: 95%;
+        padding: 10px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    dl {
+        padding: 0;
+    }
+
+    .card-recomendacao-por-nivel {
+        width: 30%;
+    }
 }
 
-dd p{
-    padding: 0p;
+@media screen and (max-width: 1280px) {
+    .card-indicacao,
+    #card-separado {
+        width: 95%;
+    }
 }
 
-.card-recomendacao-por-nivel{
-    width: 30%;
-}
-}
-
-@media screen and (max-width:1280px) {
-    .card-indicacao{
+@media screen and (max-width: 900px) {
+    .card-recomendacao-por-nivel {
         flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        width: 95%;
-    }
-
-    #card-separado{
         width: 95%;
     }
 }
 
-@media screen and (max-width:540px) {
-    .container-header{
+@media screen and (max-width: 540px) {
+    .container-header {
         padding-top: 20px;
-        height: min-content;
+        height: auto;
         flex-direction: column;
         justify-content: space-evenly;
         gap: 10px;
     }
-    .titulo-principal{
+
+    .titulo-principal {
         padding-top: 10px;
     }
-    .home-nav-links{
+
+    .home-nav-links {
         flex-direction: column;
         gap: 5px;
         padding: 10px;
-    }
-    .recomendacoes{
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:900px) {
-    .card-recomendacao-por-nivel{
-        flex-direction: column;
-        width: 95%;
-    }
-    .recomendacoes{
-        margin: 0;
     }
 }
