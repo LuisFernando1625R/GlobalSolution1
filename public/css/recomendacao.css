@@ -91,13 +91,12 @@ p {
 }
 
 #card-separado {
-    width: 87.5%;
+    width: 85%;
 }
 
 #pomofocus-link{
     text-decoration: underline;
     color: #000;
-
 }
 
 .titulo-principal, .subtitulo, .sub-subtitulo {
@@ -139,7 +138,7 @@ p {
 
 .card-indicacao {
     align-items: center;
-    width: 40%;
+    width: 20%;
     gap: 15px;
 }
 
@@ -196,11 +195,14 @@ dd p{
 }
 }
 
-@media screen and (max-width:1000px) {
-    .card-recomendacao-por-nivel{
+@media screen and (max-width:1280px) {
+    .card-recomendacao-por-nivel,.card-indicacao{
         flex-direction: column;
         justify-content: center;
         justify-items: center;
+        width: 95%;
+    }
+    #card-separado{
         width: 95%;
     }
 }
