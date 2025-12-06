@@ -204,15 +204,8 @@ h3,
     }
 }
 
-@media screen and (max-width: 1280px) {
-    .card-indicacao,
-    #card-separado {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .card-recomendacao-por-nivel {
+@media screen and (max-width: 950px) {
+    .card-indicacao,.card-recomendacao-por-nivel {
         flex-direction: column;
         width: 95%;
     }
