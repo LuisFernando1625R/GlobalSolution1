@@ -39,7 +39,7 @@ body{
 .home-nav-links li {
     list-style: none;
     font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -81,7 +81,7 @@ p {
     margin: 0;
     padding: 5px 25px;
     font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .card-indicacao, .card-recomendacao-por-nivel, h3, .sub-subtitulo {
@@ -106,17 +106,17 @@ p {
 }
 
 .titulo-principal{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 30px 0px;
 }
 
 .subtitulo {
     margin-bottom: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .sub-subtitulo{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 10px;
     font-weight: 490;
@@ -176,7 +176,7 @@ p {
 .link-saiba-mais{
     text-decoration: underline;
     color: #000;
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-align: center;
  }
 
