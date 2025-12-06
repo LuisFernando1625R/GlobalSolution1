@@ -91,7 +91,7 @@ p {
 }
 
 #card-separado {
-    width: 85%;
+    width: 93.5%;
 }
 
 #pomofocus-link{
@@ -133,29 +133,31 @@ p {
 
 .recomendacoes {
     justify-content: center;
-    margin: 0 30px;
-}
-
-.card-indicacao {
+    margin: 0;
+    box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.4);
+    background-color: #fff;
+    border-radius: 24px;
+    justify-content: center;
     align-items: center;
-    width: 20%;
-    gap: 15px;
 }
 
-.card-indicacao, .card-recomendacao-por-nivel {
+.card-indicacao{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 16px;
+    width: 20%;
+    gap: 15px;
     border-radius: 24px;
     box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.4);
     background-color: #fff;
 }
 
 .card-recomendacao-por-nivel {
-    width: 30%;
+    width: 25%;
     gap: 15px;
+    margin: 10px;
 }
 
 .lista-links-saiba-mais{
@@ -179,7 +181,7 @@ p {
  }
 
 @media screen and (max-width: 740px) {
-.card-indicacao, .card-recomendacao-por-nivel, #card-separado {
+.card-indicacao, #card-separado {
     width: 95%;
     padding: 10px;
 }
@@ -193,15 +195,20 @@ dl{
 dd p{
     padding: 0p;
 }
+
+.card-recomendacao-por-nivel{
+    width: 30%;
+}
 }
 
 @media screen and (max-width:1280px) {
-    .card-recomendacao-por-nivel,.card-indicacao{
+    .card-indicacao{
         flex-direction: column;
         justify-content: center;
         justify-items: center;
         width: 95%;
     }
+
     #card-separado{
         width: 95%;
     }
@@ -222,6 +229,16 @@ dd p{
         flex-direction: column;
         gap: 5px;
         padding: 10px;
+    }
+    .recomendacoes{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .card-recomendacao-por-nivel{
+        flex-direction: column;
+        width: 95%;
     }
     .recomendacoes{
         margin: 0;
